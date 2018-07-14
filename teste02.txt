@@ -1,0 +1,26 @@
+https://askubuntu.com/questions/206449/git-config-global-file-remove-settings
+=====
+Super late answer, but hopefully still helpful:
+
+git config --global --unset-all user.name
+
+Then you're free to:
+
+git config --global --add user.name <whatever>
+========
+
+
+git config --global -e
+
+This command will open GNU nano editor with what you are expecting.
+=======
+
+
+Last but not least usefull, although it's a marginal case is to use
+
+git config --global --remove-section user
+
+In my case it cleared the data perfectly and with little to no effort
+
+=======
+
